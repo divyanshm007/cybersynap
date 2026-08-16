@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url><loc>https://cybersynap.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Core -->
+  <url><loc>https://cybersynap.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/book-consultation</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+
+  <!-- Services listing -->
+  <url><loc>https://cybersynap.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Service detail pages -->
+  <url><loc>https://cybersynap.com/services/custom-software-development</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cybersynap.com/services/enterprise-software-development</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://cybersynap.com/services/web-development</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/services/mobile-app-development</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/services/ai-solutions</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cybersynap.com/services/cloud-solutions</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/services/devops-services</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/services/pos-software-development</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/services/dot-net-development</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/services/react-development</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/services/angular-development</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/services/real-estate-software-development</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Solutions listing -->
+  <url><loc>https://cybersynap.com/solutions</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Solution detail pages -->
+  <url><loc>https://cybersynap.com/solutions/erp</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cybersynap.com/solutions/crm</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://cybersynap.com/solutions/hrms</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://cybersynap.com/solutions/wms</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://cybersynap.com/solutions/restaurant-pos</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/solutions/retail-pos</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cybersynap.com/solutions/supermarket-pos</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/solutions/pharmacy-pos</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/solutions/kds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Industries listing -->
+  <url><loc>https://cybersynap.com/industries</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/industries/restaurants</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/retail</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/healthcare</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/manufacturing</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/education</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/industries/logistics</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/real-estate</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://cybersynap.com/industries/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/industries/hospitality</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog & Case Studies -->
+  <url><loc>https://cybersynap.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://cybersynap.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://cybersynap.com/terms-and-conditions</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://cybersynap.com/cookie-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>

@@ -1,0 +1,13 @@
+{
+  "name": "CyberSynap",
+  "short_name": "CyberSynap",
+  "description": "Custom ERP, CRM, HRMS, WMS, POS and AI Automation Software Development Company",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B3DFF",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
