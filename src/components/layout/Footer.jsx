@@ -13,12 +13,6 @@ const InstagramIcon = () => (
   </svg>
 );
 
-const PinterestIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 4.991 3.052 9.293 7.438 11.12-.103-.889-.197-2.256.041-3.227.215-.875 1.435-6.087 1.435-6.087s-.366-.731-.366-1.815c0-1.7.987-2.972 2.214-2.972 1.044 0 1.55.785 1.55 1.723 0 1.05-.668 2.621-1.013 4.078-.288 1.218.609 2.21 1.81 2.21 2.173 0 3.847-2.293 3.847-5.604 0-2.929-2.104-4.977-5.11-4.977-3.479 0-5.524 2.608-5.524 5.307 0 1.05.405 2.175.911 2.791a.365.365 0 0 1 .084.351l-.34 1.388c-.055.224-.177.272-.41.164-1.528-.712-2.484-2.948-2.484-4.742 0-3.858 2.804-7.403 8.086-7.403 4.245 0 7.546 3.025 7.546 7.07 0 4.218-2.659 7.61-6.35 7.61-1.241 0-2.41-.645-2.81-1.406l-.763 2.911c-.276 1.063-1.022 2.396-1.523 3.208C10.529 23.88 11.256 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
-  </svg>
-);
-
 const YoutubeIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -87,10 +81,6 @@ export default function Footer() {
                 <Mail size={14} className="flex-shrink-0" />
                 query@cybersynap.com
               </a>
-              <a href="mailto:cybersynap@gmail.com" className="flex items-center gap-2 hover:text-purple-400 transition-colors">
-                <Mail size={14} className="flex-shrink-0" />
-                cybersynap@gmail.com
-              </a>
               <a href="tel:+919005977780" className="flex items-center gap-2 hover:text-purple-400 transition-colors">
                 <Phone size={14} className="flex-shrink-0" />
                 +91 90059 77780
@@ -104,14 +94,15 @@ export default function Footer() {
             {/* Social icons */}
             <div className="flex gap-3 mt-6">
               {[
-                { label: 'Facebook', Icon: FacebookIcon, href: '#' },
-                { label: 'Instagram', Icon: InstagramIcon, href: '#' },
-                { label: 'Pinterest', Icon: PinterestIcon, href: '#' },
-                { label: 'YouTube', Icon: YoutubeIcon, href: '#' },
+                { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/cybersynap' },
+                { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/cybersynap' },
+                { label: 'YouTube', Icon: YoutubeIcon, href: 'https://www.youtube.com/@cybersynap' },
               ].map(({ label, Icon, href }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-xl flex items-center justify-center transition-all text-white/60 hover:text-white"
                   style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)' }}

@@ -52,9 +52,29 @@
   <url><loc>https://cybersynap.com/industries/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cybersynap.com/industries/hospitality</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Blog & Case Studies -->
+  <!-- Blog listing -->
   <url><loc>https://cybersynap.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog posts -->
+  <url><loc>https://cybersynap.com/blog/restaurant-pos-system-guide</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/restaurant-pos-vs-traditional-billing</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/kds-kitchen-efficiency</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/what-is-warehouse-management-system</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/erp-vs-crm-difference</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/blog/ai-automation-business-processes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/blog/retail-pos-inventory-management</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/pharmacy-medical-store-technology</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://cybersynap.com/blog/custom-software-vs-off-the-shelf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/blog/modernise-legacy-software-cloud-ai</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- Case studies -->
   <url><loc>https://cybersynap.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/multi-chain-restaurant-pos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/manufacturing-erp</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/pharmacy-management-system</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/wms-logistics-implementation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/retail-pos-supermarket</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cybersynap.com/case-studies/crm-financial-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Legal -->
   <url><loc>https://cybersynap.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>

@@ -33,19 +33,30 @@ export default function ServiceDetail() {
   if (!service) return <Navigate to="/services" replace />;
 
   const Icon = service.icon;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: service.title,
-    description: service.description,
-    provider: {
-      '@type': 'Organization',
-      name: 'CyberSynap',
-      url: 'https://cybersynap.com',
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: service.title,
+      description: service.description,
+      provider: {
+        '@type': 'Organization',
+        name: 'CyberSynap',
+        url: 'https://cybersynap.com',
+      },
+      areaServed: ['IN', 'US', 'GB', 'AE', 'AU'],
+      url: `https://cybersynap.com/services/${slug}`,
     },
-    areaServed: ['IN', 'US', 'GB', 'AE', 'AU'],
-    url: `https://cybersynap.com/services/${slug}`,
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cybersynap.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://cybersynap.com/services' },
+        { '@type': 'ListItem', position: 3, name: service.title, item: `https://cybersynap.com/services/${slug}` },
+      ],
+    },
+  ];
 
   return (
     <>

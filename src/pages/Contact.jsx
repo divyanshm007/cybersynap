@@ -11,7 +11,6 @@ import GradientText from '../components/common/GradientText';
 
 const contactInfo = [
   { icon: Mail, label: 'Business Email', value: 'query@cybersynap.com', href: 'mailto:query@cybersynap.com' },
-  { icon: Mail, label: 'General Email', value: 'cybersynap@gmail.com', href: 'mailto:cybersynap@gmail.com' },
   { icon: Phone, label: 'Phone', value: '+91 90059 77780', href: 'tel:+919005977780' },
   { icon: MapPin, label: 'Office Address', value: 'Janki Vihar Colony, Madiyaon, Lucknow, Uttar Pradesh 226021', href: null },
   { icon: Clock, label: 'Response Time', value: 'Within 24 business hours', href: null },

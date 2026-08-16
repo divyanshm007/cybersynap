@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const BASE_URL = 'https://cybersynap.com';
@@ -9,14 +10,19 @@ export default function SEO({
   keywords = '',
   canonical,
   ogImage = DEFAULT_OG_IMAGE,
+  ogType = 'website',
   schema = null,
   noindex = false,
 }) {
+  const location = useLocation();
+
   const fullTitle = title
     ? `${title} | CyberSynap`
     : 'CyberSynap — Custom Software, ERP, CRM, HRMS, WMS & AI Automation';
 
-  const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : null;
+  const canonicalUrl = canonical
+    ? `${BASE_URL}${canonical}`
+    : `${BASE_URL}${location.pathname}`;
 
   return (
     <Helmet>
@@ -24,14 +30,14 @@ export default function SEO({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       {noindex && <meta name="robots" content="noindex, nofollow" />}
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:type" content="website" />
-      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content="CyberSynap" />
 
       {/* Twitter */}

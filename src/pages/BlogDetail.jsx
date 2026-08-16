@@ -14,6 +14,22 @@ function renderContent(block, i) {
       </h2>
     );
   }
+  if (block.type === 'subheading') {
+    return (
+      <h3 key={i} className="text-lg font-semibold text-[var(--text-primary)] mt-6 mb-2">
+        {block.text}
+      </h3>
+    );
+  }
+  if (block.type === 'list') {
+    return (
+      <ul key={i} className="list-disc pl-6 mb-4 space-y-1.5">
+        {block.items.map((item, j) => (
+          <li key={j} className="text-[var(--text-secondary)] leading-relaxed">{item}</li>
+        ))}
+      </ul>
+    );
+  }
   return (
     <p key={i} className="text-[var(--text-secondary)] leading-relaxed mb-4">
       {block.text}
@@ -29,16 +45,24 @@ export default function BlogDetail() {
 
   const related = blogs.filter((b) => b.slug !== slug && b.category === blog.category).slice(0, 3);
 
+  const wordCount = blog.content.reduce((sum, block) => {
+    if (block.text) return sum + block.text.split(' ').length;
+    if (block.items) return sum + block.items.reduce((s, item) => s + item.split(' ').length, 0);
+    return sum;
+  }, 0);
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: blog.title,
     description: blog.excerpt,
-    author: { '@type': 'Organization', name: 'CyberSynap' },
-    publisher: { '@type': 'Organization', name: 'CyberSynap', logo: { '@type': 'ImageObject', url: 'https://cybersynap.com/favicon.png' } },
+    image: blog.image || 'https://cybersynap.com/og-image.png',
+    author: { '@type': 'Person', name: 'CyberSynap Editorial Team' },
+    publisher: { '@type': 'Organization', name: 'CyberSynap', logo: { '@type': 'ImageObject', url: 'https://cybersynap.com/cyber_synap_logo.png' } },
     url: `https://cybersynap.com/blog/${blog.slug}`,
     datePublished: blog.date,
     dateModified: blog.date,
+    wordCount,
   };
 
   return (
@@ -48,6 +72,8 @@ export default function BlogDetail() {
         description={blog.excerpt}
         keywords={`${blog.category.toLowerCase()}, ${blog.title.toLowerCase()}, software blog, CyberSynap blog`}
         canonical={`/blog/${blog.slug}`}
+        ogType="article"
+        ogImage={blog.image || undefined}
         schema={schema}
       />
       {/* Hero */}

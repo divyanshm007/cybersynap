@@ -7,6 +7,7 @@ import Breadcrumbs from '../components/common/Breadcrumbs';
 import Button from '../components/common/Button';
 import CTASection from '../components/common/CTASection';
 import GradientText from '../components/common/GradientText';
+import SEO from '../components/common/SEO';
 
 export default function CaseStudyDetail() {
   const { slug } = useParams();
@@ -14,8 +15,16 @@ export default function CaseStudyDetail() {
 
   if (!study) return <Navigate to="/case-studies" replace />;
 
+  const seoDescription = `${study.title} — CyberSynap case study. ${study.challenge.length > 130 ? study.challenge.slice(0, 127) + '...' : study.challenge}`;
+
   return (
     <>
+      <SEO
+        title={study.title}
+        description={seoDescription}
+        keywords={`${study.category.join(', ').toLowerCase()}, ${study.industry.toLowerCase()} case study, CyberSynap case study`}
+        canonical={`/case-studies/${study.slug}`}
+      />
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-purple-600 to-pink-600 pt-24 lg:pt-32 pb-16 lg:pb-20 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-white/10 -translate-y-20 translate-x-20" />

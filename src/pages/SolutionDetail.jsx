@@ -73,16 +73,27 @@ export default function SolutionDetail() {
     keywords: `${solution.title.toLowerCase()}, ${solution.category.toLowerCase()} software, business software India`,
   };
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: solution.title,
-    description: solution.description,
-    applicationCategory: 'BusinessApplication',
-    operatingSystem: 'Web, iOS, Android',
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', description: 'Free demo available' },
-    provider: { '@type': 'Organization', name: 'CyberSynap', url: 'https://cybersynap.com' },
-  };
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: solution.title,
+      description: solution.description,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web, iOS, Android',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', description: 'Free demo available' },
+      provider: { '@type': 'Organization', name: 'CyberSynap', url: 'https://cybersynap.com' },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://cybersynap.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Solutions', item: 'https://cybersynap.com/solutions' },
+        { '@type': 'ListItem', position: 3, name: solution.title, item: `https://cybersynap.com/solutions/${slug}` },
+      ],
+    },
+  ];
 
   return (
     <>
